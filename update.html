@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(img/back.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            /* box-shadow: 0 0 100px #7303c0; */
+        }
+
+
+        .form {
+            margin-top: 100px;
+            margin-left: 500px;
+            width: 400px;
+            height: 415px;
+            padding: 2rem 2rem;
+            background-color: red;
+            background-image: linear-gradient(to right, #42eb04, #8d7988);
+
+        }
+
+        .form h2 {
+            color: white;
+            font-family: serif;
+            font-weight: 700;
+        }
+
+
+        .side-banner {
+            width: 400px;
+            height: 415px;
+
+        }
+
+        form {
+            margin: 1.5rem 0;
+        }
+
+        .form center {
+            color: white;
+        }
+
+        form label {
+            display: block;
+            color: white;
+            font-size: 16px;
+            font-family: serif;
+            margin-top: 1rem;
+        }
+
+        form input {
+            width: 100%;
+            height: 45px;
+            outline: none;
+            border: 1px solid white;
+            padding: 0 .1rem;
+            margin-top: .1rem;
+            border-radius: 5px;
+            font-family: serif;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: .8rem 3rem;
+            margin-top: 2rem;
+            outline: none;
+            border: none;
+            text-transform: uppercase;
+            font-family: serif;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 5px;
+            color: white;
+            background-image: linear-gradient(to right, #ec38bc, #7303c0);
+
+        }
+
+        .account-page {
+            padding: 50px;
+        }
+
+        .ft {
+            background-color: black;
+            color: red;
+        }
+
+        .links {
+            font-size: 30px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .links a:hover {
+            color: blue;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 90px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-color: black;
+            font-size: 20px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .footer-links a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" style="text-decoration: none;">
+        <li
+            style="color: rgb(212, 205, 205);font-size:30px;padding-left: -30px;text-shadow: 10px 5px 6px red;list-style: none;margin:30px ;">
+            Gamming
+            Room</li>
+    </a>
+    <main>
+        <div class="container">
+            <div class="form">
+                <form action="update.jsp" method="post">
+                    <label>Enter your user name:</label>
+                    <input type="text" name="mail" placeholder="Enter user name.." required>
+                    <br><br>
+                    <label>Enter your password</label>
+                    <input type="password" name="pass" placeholder="New password.." required>
+                    <br><br>
+                    <label>Enter your Reneter password</label>
+                    <input type="password" name="pass1" placeholder="Re enter Password.." required>
+                    <br><br>
+                    <center><input type="submit" value="submit" class="btn"></center>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="links">
+            <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a> &nbsp;
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>&nbsp;
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+                target="_blank"><i class="fa-brands fa-twitter"></i></a>&nbsp;
+        </div>
+        <span> &copy; Gamming Room, 2022 All rights reserved </span>
+        <div class="footer-links">
+            <a href="main_login.html">Login</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="main_signup.html">signup</a>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
